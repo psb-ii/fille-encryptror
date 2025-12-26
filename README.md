@@ -1,2 +1,2 @@
-# fille-encryptor
+# file-encryptor
 Encrypts the input file 
