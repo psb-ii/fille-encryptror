@@ -41,7 +41,7 @@ struct Task{
         if(std::getline(iss,filePath,',') && std::getline(iss,actionStr)){
             // "test.txt.ENCRYPT"
             // filePath = "test.txt" and actionsStr = "Encrypt"
-            Action action = (actionStr == "Encrypt"? Action::ENCRYPT: Action::ENCRYPT);
+            Action action = (actionStr == "ENCRYPT"? Action::ENCRYPT: Action::DECRYPT);
             IO io(filePath);
             std::fstream f_stream = std::move(io.getFileSream()); // move the ownership and not only the reference
             if(f_stream.is_open()){

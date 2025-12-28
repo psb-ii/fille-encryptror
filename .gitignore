@@ -1,3 +1,4 @@
 .env
 HLD.excalidraw
-.vscode/
+test/
+.DS_Store

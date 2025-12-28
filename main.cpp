@@ -13,7 +13,7 @@ int main(int argc,char* argv[]){
     std::cout<<"Enter the directory path :"<<std::endl;
     std::getline(std::cin, directory);
 
-    std::cout<<"Enter the action? ENCRYPT OR DECRYPYT :"<<std::endl;
+    std::cout<<"Enter the action? ENCRYPT OR DECRYPT :"<<std::endl;
     std::getline(std::cin, action);
 
     try{
