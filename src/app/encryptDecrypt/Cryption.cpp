@@ -12,7 +12,7 @@ int executeCryption(const std::string &taskData){
     if(task.action == Action::ENCRYPT){
         char ch;
         while(task.f_stream.get(ch)){
-            ch = (ch + key)%256;   // gives out the value between [0,255]
+            ch = (ch + key) % 256;   // gives out the value between [0,255]
             task.f_stream.seekp(-1, std::ios::cur);
             task.f_stream.put(ch);
         }
